@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Decorator",
+        "repositoryURL": "git@github.com:Dmitry-Dmitriev/Decorator.git",
+        "state": {
+          "branch": null,
+          "revision": "ed51db06ff2c93178388d2e22eb48ffdedfa3f8b",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SwiftParser",
+        "repositoryURL": "git@github.com:Dmitry-Dmitriev/SwiftParser.git",
+        "state": {
+          "branch": null,
+          "revision": "8baf8b1ab46cfab915f5179f4d3c6b7ec3d4db88",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
