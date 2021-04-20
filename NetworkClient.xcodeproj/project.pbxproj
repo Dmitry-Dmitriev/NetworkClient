@@ -1,732 +1,572 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "NetworkClient::NetworkClient" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_35";
-         buildPhases = (
-            "OBJ_38",
-            "OBJ_52"
-         );
-         dependencies = (
-         );
-         name = "NetworkClient";
-         productName = "NetworkClient";
-         productReference = "NetworkClient::NetworkClient::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "NetworkClient::NetworkClient::Product" = {
-         isa = "PBXFileReference";
-         path = "NetworkClient.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "NetworkClient::NetworkClientPackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_60";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_63"
-         );
-         name = "NetworkClientPackageTests";
-         productName = "NetworkClientPackageTests";
-      };
-      "NetworkClient::NetworkClientTests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_65";
-         buildPhases = (
-            "OBJ_68",
-            "OBJ_70"
-         );
-         dependencies = (
-            "OBJ_72"
-         );
-         name = "NetworkClientTests";
-         productName = "NetworkClientTests";
-         productReference = "NetworkClient::NetworkClientTests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "NetworkClient::NetworkClientTests::Product" = {
-         isa = "PBXFileReference";
-         path = "NetworkClientTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "NetworkClient::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_54";
-         buildPhases = (
-            "OBJ_57"
-         );
-         dependencies = (
-         );
-         name = "NetworkClientPackageDescription";
-         productName = "NetworkClientPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastSwiftMigration = "9999";
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "en";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_29";
-         projectDirPath = ".";
-         targets = (
-            "NetworkClient::NetworkClient",
-            "NetworkClient::SwiftPMPackageDescription",
-            "NetworkClient::NetworkClientPackageTests::ProductTarget",
-            "NetworkClient::NetworkClientTests"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "Final.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "ReceiveHandler.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_12" = {
-         isa = "PBXFileReference";
-         path = "TransitRespHandler.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_13" = {
-         isa = "PBXFileReference";
-         path = "WWWClient.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_14" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_15",
-            "OBJ_16",
-            "OBJ_17",
-            "OBJ_18",
-            "OBJ_19"
-         );
-         name = "Protocols";
-         path = "Protocols";
-         sourceTree = "<group>";
-      };
-      "OBJ_15" = {
-         isa = "PBXFileReference";
-         path = "AppicationResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_16" = {
-         isa = "PBXFileReference";
-         path = "HTTPClient.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_17" = {
-         isa = "PBXFileReference";
-         path = "ReceiveItem.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "SendItem.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "TransitResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24"
-         );
-         name = "Structs & Enums";
-         path = "Structs & Enums";
-         sourceTree = "<group>";
-      };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "AppResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "HTTPCode.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "HTTPResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXFileReference";
-         path = "RawResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_25" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_26"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_26" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_27"
-         );
-         name = "NetworkClientTests";
-         path = "Tests/NetworkClientTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "XCTestManifests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXGroup";
-         children = (
-         );
-         name = "Dependencies";
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_29" = {
-         isa = "PBXGroup";
-         children = (
-            "NetworkClient::NetworkClient::Product",
-            "NetworkClient::NetworkClientTests::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1",
-               "DEBUG=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "LICENSE";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "README.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_35" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_36",
-            "OBJ_37"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_36" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkClient.xcodeproj/NetworkClient_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkClient";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "NetworkClient";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_37" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkClient.xcodeproj/NetworkClient_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkClient";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "NetworkClient";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_38" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_39",
-            "OBJ_40",
-            "OBJ_41",
-            "OBJ_42",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46",
-            "OBJ_47",
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50",
-            "OBJ_51"
-         );
-      };
-      "OBJ_39" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_41" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_42" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
-      };
-      "OBJ_43" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_44" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_16";
-      };
-      "OBJ_45" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
-      };
-      "OBJ_46" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_47" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_48" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_49" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_25",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_32",
-            "OBJ_33"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_51" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_52" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_54" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_55",
-            "OBJ_56"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_55" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-sdk",
-               "/Applications/Xcode_12.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
-               "-package-description-version",
-               "5.3.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_56" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-sdk",
-               "/Applications/Xcode_12.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
-               "-package-description-version",
-               "5.3.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_57" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_58"
-         );
-      };
-      "OBJ_58" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_61",
-            "OBJ_62"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_61" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_62" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_63" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkClient::NetworkClientTests";
-      };
-      "OBJ_65" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_66",
-            "OBJ_67"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_66" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkClient.xcodeproj/NetworkClientTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "NetworkClientTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_67" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkClient.xcodeproj/NetworkClientTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "NetworkClientTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_68" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_69"
-         );
-      };
-      "OBJ_69" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_71"
-         );
-      };
-      "OBJ_71" = {
-         isa = "PBXBuildFile";
-         fileRef = "NetworkClient::NetworkClient::Product";
-      };
-      "OBJ_72" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkClient::NetworkClient";
-      };
-      "OBJ_8" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_9",
-            "OBJ_14",
-            "OBJ_20"
-         );
-         name = "NetworkClient";
-         path = "Sources/NetworkClient";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_9" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_10",
-            "OBJ_11",
-            "OBJ_12",
-            "OBJ_13"
-         );
-         name = "Classes";
-         path = "Classes";
-         sourceTree = "<group>";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"NetworkClient::NetworkClientPackageTests::ProductTarget" /* NetworkClientPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXAggregateTarget "NetworkClientPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_63 /* PBXTargetDependency */,
+			);
+			name = NetworkClientPackageTests;
+			productName = NetworkClientPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_39 /* Final.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Final.swift */; };
+		OBJ_40 /* ReceiveHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ReceiveHandler.swift */; };
+		OBJ_41 /* TransitRespHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* TransitRespHandler.swift */; };
+		OBJ_42 /* WWWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* WWWClient.swift */; };
+		OBJ_43 /* AppicationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* AppicationResponse.swift */; };
+		OBJ_44 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* HTTPClient.swift */; };
+		OBJ_45 /* ReceiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ReceiveItem.swift */; };
+		OBJ_46 /* SendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SendItem.swift */; };
+		OBJ_47 /* TransitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* TransitResponse.swift */; };
+		OBJ_48 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AppResponse.swift */; };
+		OBJ_49 /* HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* HTTPCode.swift */; };
+		OBJ_50 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* HTTPResponse.swift */; };
+		OBJ_51 /* RawResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* RawResponse.swift */; };
+		OBJ_58 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_69 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* XCTestManifests.swift */; };
+		OBJ_71 /* NetworkClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkClient::NetworkClient::Product" /* NetworkClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ACB2BA8262F8B1800212027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetworkClient::NetworkClient";
+			remoteInfo = NetworkClient;
+		};
+		0ACB2BAB262F8B1900212027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetworkClient::NetworkClientTests";
+			remoteInfo = NetworkClientTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"NetworkClient::NetworkClient::Product" /* NetworkClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NetworkClient::NetworkClientTests::Product" /* NetworkClientTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NetworkClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Final.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final.swift; sourceTree = "<group>"; };
+		OBJ_11 /* ReceiveHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveHandler.swift; sourceTree = "<group>"; };
+		OBJ_12 /* TransitRespHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitRespHandler.swift; sourceTree = "<group>"; };
+		OBJ_13 /* WWWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWWClient.swift; sourceTree = "<group>"; };
+		OBJ_15 /* AppicationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppicationResponse.swift; sourceTree = "<group>"; };
+		OBJ_16 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		OBJ_17 /* ReceiveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveItem.swift; sourceTree = "<group>"; };
+		OBJ_18 /* SendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendItem.swift; sourceTree = "<group>"; };
+		OBJ_19 /* TransitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitResponse.swift; sourceTree = "<group>"; };
+		OBJ_21 /* AppResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResponse.swift; sourceTree = "<group>"; };
+		OBJ_22 /* HTTPCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCode.swift; sourceTree = "<group>"; };
+		OBJ_23 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		OBJ_24 /* RawResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawResponse.swift; sourceTree = "<group>"; };
+		OBJ_27 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_32 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_33 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_71 /* NetworkClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_14 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* AppicationResponse.swift */,
+				OBJ_16 /* HTTPClient.swift */,
+				OBJ_17 /* ReceiveItem.swift */,
+				OBJ_18 /* SendItem.swift */,
+				OBJ_19 /* TransitResponse.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* Structs & Enums */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* AppResponse.swift */,
+				OBJ_22 /* HTTPCode.swift */,
+				OBJ_23 /* HTTPResponse.swift */,
+				OBJ_24 /* RawResponse.swift */,
+			);
+			path = "Structs & Enums";
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* NetworkClientTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* NetworkClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* XCTestManifests.swift */,
+			);
+			name = NetworkClientTests;
+			path = Tests/NetworkClientTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_28 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"NetworkClient::NetworkClient::Product" /* NetworkClient.framework */,
+				"NetworkClient::NetworkClientTests::Product" /* NetworkClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_25 /* Tests */,
+				OBJ_28 /* Dependencies */,
+				OBJ_29 /* Products */,
+				OBJ_32 /* LICENSE */,
+				OBJ_33 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* NetworkClient */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Classes */,
+				OBJ_14 /* Protocols */,
+				OBJ_20 /* Structs & Enums */,
+			);
+			name = NetworkClient;
+			path = Sources/NetworkClient;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Final.swift */,
+				OBJ_11 /* ReceiveHandler.swift */,
+				OBJ_12 /* TransitRespHandler.swift */,
+				OBJ_13 /* WWWClient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"NetworkClient::NetworkClient" /* NetworkClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "NetworkClient" */;
+			buildPhases = (
+				OBJ_38 /* Sources */,
+				OBJ_52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkClient;
+			productName = NetworkClient;
+			productReference = "NetworkClient::NetworkClient::Product" /* NetworkClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"NetworkClient::NetworkClientTests" /* NetworkClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "NetworkClientTests" */;
+			buildPhases = (
+				OBJ_68 /* Sources */,
+				OBJ_70 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_72 /* PBXTargetDependency */,
+			);
+			name = NetworkClientTests;
+			productName = NetworkClientTests;
+			productReference = "NetworkClient::NetworkClientTests::Product" /* NetworkClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"NetworkClient::SwiftPMPackageDescription" /* NetworkClientPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "NetworkClientPackageDescription" */;
+			buildPhases = (
+				OBJ_57 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkClientPackageDescription;
+			productName = NetworkClientPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "NetworkClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"NetworkClient::NetworkClient" /* NetworkClient */,
+				"NetworkClient::SwiftPMPackageDescription" /* NetworkClientPackageDescription */,
+				"NetworkClient::NetworkClientPackageTests::ProductTarget" /* NetworkClientPackageTests */,
+				"NetworkClient::NetworkClientTests" /* NetworkClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_39 /* Final.swift in Sources */,
+				OBJ_40 /* ReceiveHandler.swift in Sources */,
+				OBJ_41 /* TransitRespHandler.swift in Sources */,
+				OBJ_42 /* WWWClient.swift in Sources */,
+				OBJ_43 /* AppicationResponse.swift in Sources */,
+				OBJ_44 /* HTTPClient.swift in Sources */,
+				OBJ_45 /* ReceiveItem.swift in Sources */,
+				OBJ_46 /* SendItem.swift in Sources */,
+				OBJ_47 /* TransitResponse.swift in Sources */,
+				OBJ_48 /* AppResponse.swift in Sources */,
+				OBJ_49 /* HTTPCode.swift in Sources */,
+				OBJ_50 /* HTTPResponse.swift in Sources */,
+				OBJ_51 /* RawResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_58 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_69 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkClient::NetworkClientTests" /* NetworkClientTests */;
+			targetProxy = 0ACB2BAB262F8B1900212027 /* PBXContainerItemProxy */;
+		};
+		OBJ_72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkClient::NetworkClient" /* NetworkClient */;
+			targetProxy = 0ACB2BA8262F8B1800212027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkClient.xcodeproj/NetworkClient_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkClient;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkClient.xcodeproj/NetworkClient_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkClient;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode_12.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode_12.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkClient.xcodeproj/NetworkClientTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkClientTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkClient.xcodeproj/NetworkClientTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkClientTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "NetworkClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_35 /* Build configuration list for PBXNativeTarget "NetworkClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_36 /* Debug */,
+				OBJ_37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_54 /* Build configuration list for PBXNativeTarget "NetworkClientPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_60 /* Build configuration list for PBXAggregateTarget "NetworkClientPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_65 /* Build configuration list for PBXNativeTarget "NetworkClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }
